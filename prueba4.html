@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.emergencia{
+			position:absolute;
+            width:275px;
+            height:75px;
+            font-size:25px;
+            top:2050px;
+            left:67px;
+            color: #fff;
+            background-color: #f6c8c7;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align:center;
+            font-family:century gothic;
+            text-decoration: none;
+        }
+        .emergencia:hover {
+            background-color: #f9d6d5;
+        }
+        .barra{
+         position:absolute;
+         width:1348px;
+         height:100px;
+         top:-1px;
+         left:-1px;
+         background:#F7E5D2;
+         z-index:10;
+		}
+		.ini{
+         position:absolute;
+         top:14px;
+         left:757px;
+         font-size:55px;
+         text-align:center;
+         color:black;
+         transition: all 2s;
+         font-family:century gothic;
+         z-index:53;
+		}
+        .ini:hover{
+            color:blue;
+            font-size:57px ;
+    }
+		.logo{
+         position:absolute;
+         height:500px;
+         width:200px;
+         top:13px;
+         left:34px;
+         background:url(tercera.png)no-repeat;
+         z-index:35;
+		}
+		.foto{
+			position:absolute;
+			height:700px;
+            width:1354px;
+            top:98px;
+            left:-1px;
+            background:url(cuarta.png)no-repeat;
+            z-index:35;
+            animation-name: miani;
+            animation-duration:20s;
+            animation-iteration-count: infinite;
+		}
+		.barra2{
+			position:absolute;
+			height:82px;
+            width:1348px;
+            top:598px;
+            left:-1px;
+            padding-top:15px;
+            background:#c5c6c8;
+            font-family:century gothic;
+            text-align:center;
+            font-size:23px;
+            z-index:37;
+        }
+        
+        .vigilancia{
+        	position:absolute;
+			height:882px;
+            width:1353px;
+            top:732px;
+            left:643px;
+            background:url(quinta.png) no-repeat;
+            transition-duration:10s;
+            animation-name:hey;
+            animation-duration:20s;
+            animation-iteration-count: infinite;
+            z-index:600;
+        }
+        .vigilancia:hover{
+            background:url(septima.png)no-repeat;
+            transition-duration:5s;
+    }
+        .cuadro1{
+        	position:absolute;
+        	width:580px;
+        	height:413px;
+        	top:732px;
+        	left:-1px;
+        	font-size:25px;
+        	text-align:center;
+        	font-family:century gothic;
+
+        }
+        .cuadro2{
+        	position:absolute;
+        	width:580px;
+        	height:413px;
+        	top:1162px;
+        	left:723px;
+        	font-size:25px;
+        	text-align:center;
+        	font-family:century gothic;
+        }
+        .emergen{
+        	position:absolute;
+			height:882px;
+            width:1353px;
+            top:1622px;
+            left:660px;
+            background:url(emergencia.png) no-repeat;
+            animation-name:holii;
+            animation-duration:20s;
+            animation-iteration-count: infinite;
+            z-index:600;
+        }
+        .cuadro3{
+        	position:absolute;
+        	height:413px;
+        	width:580px;
+        	top:1622px;
+        	left:10px;
+        	font-size:25px;
+        	text-align:center;
+        	font-family:century gothic;
+       }
+       .gps{
+        	position:absolute;
+			height:882px;
+            width:1353px;
+            top:1162px;
+            left:-1px;
+            background:url(sexta.png) no-repeat;
+            animation-name:hello;
+            animation-duration:20s;
+            animation-iteration-count: infinite;
+            z-index:600;
+        }
+        .hola{
+          position:absolute;
+            width:275px;
+            height:75px;
+            font-size:25px;
+            top:2050px;
+            left:767px;
+            color: #fff;
+            background-color: #d9534f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align:center;
+            font-family:century gothic;
+            text-decoration: none;  
+        }
+        .hola:hover{
+            color:blue;
+            font-size:57px ;
+    }
+     @keyframes hello{
+         0%{
+                font-size:44px;
+                text-align:center;
+               background:url(sexta.png) no-repeat;
+            }
+            25%{
+                font-size:44px;
+                text-align:center;
+                background:url(doceavo.png)no-repeat;
+            }
+            50%{
+                font-size:44px;
+                text-align:center;
+                background:url(sexta.png) no-repeat;
+            }
+            75%{
+                font-size:44px;
+                text-align:center;
+                background:url(doceavo.png)no-repeat;
+            }
+            100%{
+                font-size:44px;
+                text-align:center;
+                background:url(sexta.png) no-repeat;
+            }   
+        }
+        .alerta{
+            position:absolute;
+            width:275px;
+            height:75px;
+            font-size:25px;
+            top:2650px;
+            left:767px;
+            color: #fff;
+            background-color: #f6c8c7;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align:center;
+            font-family:century gothic;
+            text-decoration: none;
+        }
+        .alerta:hover {
+            background-color: #f9d6d5;
+        }
+        .alerta1{
+           position:absolute;
+            height:882px;
+            width:1353px;
+            top:2232px;
+            left:10px;
+            background:url(alerta.png) no-repeat;
+            animation-name:cucu;
+            animation-duration:20s;
+            animation-iteration-count: infinite;
+            z-index:600; 
+        }
+        .sapaaa{
+            position:absolute;
+            width:580px;
+            height:413px;
+            top:2228px;
+            left:643px;
+            font-size:25px;
+            text-align:center;
+            font-family:century gothic;
+        }
+        .gugu{
+            position:absolute;
+            width:1480px;
+            height:413px;
+            top:2732px;
+            left:-1px;
+            background:url(lista.png)no-repeat;
+        }
+        .contactanos{
+            position:absolute;
+            width:1480px;
+            height:413px;
+            top:3054px;
+            left:-1px;
+            background:url(info.png)no-repeat;
+        }
+    @keyframes hey{
+         0%{
+                font-size:44px;
+                text-align:center;
+               background:url(quinta.png) no-repeat;
+            }
+            25%{
+                font-size:44px;
+                text-align:center;
+                background:url(septima.png)no-repeat;
+            }
+            50%{
+                font-size:44px;
+                text-align:center;
+                background:url(septima.png) no-repeat;
+            }
+            75%{
+                font-size:44px;
+                text-align:center;
+                background:url(quinta.png)no-repeat;
+            }
+            100%{
+                font-size:44px;
+                text-align:center;
+                background:url(septima.png) no-repeat;
+            }   
+        }
+        @keyframes cucu{
+         0%{
+                font-size:44px;
+                text-align:center;
+               background:url(alerta.png) no-repeat;
+            }
+            25%{
+                font-size:44px;
+                text-align:center;
+                background:url(alerta2.png)no-repeat;
+            }
+            50%{
+                font-size:44px;
+                text-align:center;
+                background:url(alerta.png) no-repeat;
+            }
+            75%{
+                font-size:44px;
+                text-align:center;
+                background:url(alerta2.png)no-repeat;
+            }
+            100%{
+                font-size:44px;
+                text-align:center;
+                background:url(alerta.png) no-repeat;
+            }   
+        }
+    @keyframes holii{
+            0%{
+                font-size:44px;
+                text-align:center;
+               background:url(emergencia.png) no-repeat;
+            }
+            25%{
+                font-size:44px;
+                text-align:center;
+                background:url(novena.png)no-repeat;
+            }
+            50%{
+                font-size:44px;
+                text-align:center;
+                background:url(decima.png) no-repeat;
+            }
+            75%{
+                font-size:44px;
+                text-align:center;
+                background:url(emergencia.png)no-repeat;
+            }
+            100%{
+                font-size:44px;
+                text-align:center;
+                background:url(decima.png) no-repeat;
+            }   
+        }
+    @keyframes miani{
+            0%{
+                font-size:44px;
+                text-align:center;
+                background:url(cuarta.png)no-repeat;
+            }
+            25%{
+                font-size:44px;
+                text-align:center;
+                background:url(octava.png)no-repeat;
+            }
+            50%{
+                font-size:44px;
+                text-align:center;
+                background:url(cuarta.png)no-repeat;
+            }
+            75%{
+                font-size:44px;
+                text-align:center;
+                background:url(octava.png)no-repeat;
+            }
+            100%{
+                font-size:44px;
+                text-align:center;
+                background:url(cuarta.png)no-repeat;
+            }	
+
+</style>
+</head>
+<body>
+<body>
+    <h1>Contacta con nosotros por WhatsApp</h1>
+    <a href="https://wa.me/3054568308?text=Necesito%20que%20por favor%20me%20ayuden%20" target="_blank" class="emergencia">
+        Enviar mensaje por WhatsApp
+    </a>
+</body>
+<div class="barra"></div>
+<div class="ini">¡Bienvenidos a PJIS!</div>
+<div class="entrar"></div>
+<div class="logo"></div>
+<div class="foto"></div>
+<div class="barra2">Para las personas oprimidas es importantisimo<br>hacerles saber que no estan solas</div>
+ <div class="contactanos">contáctanos</div>
+<div class="seccion">Entrar</div>
+<div class="vigilancia"></div>
+<div class="cuadro1"><h1>OBJETIVO.</h1><br><b>Construir</b> una aplicacion tecnológica llamada <b>PJIS</b> la cual tiene como objetivo aumentar la conciencia y preparación de la sociedad al frente de diversas situaciones de riesgo que podemos correr cada día, promoviendo una seguridad a la sociedad y tener respuesta efectiva.</div>
+<div class="gps"></div>
+<div class="cuadro2"><h1>ubicación en tiempo real</h1><br>Se utiliza a la hora de salir de casa,se podra
+compartir la ubicación en la app llamada
+<b>“Whatsapp”</b>, tambien se podra compartir tu ubicación a la cede, familiares y amigos para que esten informados.</div>
+<div class="emergen"></div>
+<div class="cuadro3"><h1>boton de emergencia</h1><br>Este se utiliza haciendo clic en el botón que aparece en la aplicación, el cual, al oprimirse, activará la ubicación, avisará a la compañia de PJIS que nos permite estar alerta para saber si esta persona que esta corriendo peligro esta bien o todavía necesita ayuda, esta tambien nos permite a estar atentos a el tipo de peligro que esta corriendo.</div>
+<div class="alerta1"></div>
+<div class="sapaaa"><h1>ALARMA</h1><br> La alarma basicamente se creo para tener la atención de otras personas para que sepan que tu estas en peligro y poder asi actuar de manera adecuada para ayudarte a ti y la sociedad entera, es necesario que todos como comunidad nos ayudemos entre nosotros para poder vivir en un lugar mucho mejor.</div>
+<div class="gugu"></div>
+<div class="contactanos"></div>
+</html>
